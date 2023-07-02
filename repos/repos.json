@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "GT",
-      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source.git",
+      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
       "branch": "master",
       "device": "aarch64",
       "defconfig": "aarch64_defconfig"
