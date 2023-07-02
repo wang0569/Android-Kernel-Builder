@@ -2,12 +2,12 @@
   {
     "kernelSource": {
       "name": "GT_5.4",
-      "repo": "https://github.com/aosparsche/android_kernel_realme_sm8350.git",
+      "repo": "https://github.com/aosparsche/android_kernel_realme_sm8350",
       "branch": "rebase",
       "device": "RMX2202CN",
       "defconfig": "RMX2202CN_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
