@@ -6,7 +6,7 @@
       "branch": "android12-5.4",
       "device": "RMX2202",
       "defconfig": "RMX2202_defconfig"
-    },
+    }
     "withKernelSU": true,
     "toolchains": [
       {
@@ -20,32 +20,16 @@
     "name": "gcc",
     "binPath": ["bin"]
   }
-    ],
+    ]
     "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
-	}
-    },
-    "AnyKernel3": {
-      "use": false,
-      "release": true,
-      "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "sm8350"
-    }
+"params": {
+  "ARCH": "arm64",
+  "CC": "clang",
+  "externalCommand": {
+    "CLANG_TRIPLE": "aarch64-linux-gnu-",
+    "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+    "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
   }
+}
+    }  
 ]
