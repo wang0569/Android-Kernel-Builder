@@ -4,8 +4,8 @@
       "name": "GT",
       "repo": "https://github.com/aosparsche/android_kernel_realme_sm8350",
       "branch": "rebase",
-      "device": "RXM2202",
-      "defconfig": "RMX2202_defconfig"
+      "device": "GT",
+      "defconfig": "GT_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
