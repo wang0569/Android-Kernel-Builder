@@ -1,13 +1,13 @@
 [  
   {
     "kernelSource": {
-      "name": "DogDay-KernelSU-Proton-release",
-      "repo": "https://codeberg.org/DogDayAndroid/android_kernel_xiaomi_thyme",
-      "branch": "lineage-20.0",
-      "device": "thyme",
-      "defconfig": "thyme_defconfig"
+      "name": "GT-5.4-android",
+      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
+      "branch": "master",
+      "device": "GT",
+      "defconfig": "GT_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
