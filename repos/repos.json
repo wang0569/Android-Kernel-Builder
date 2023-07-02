@@ -10,11 +10,16 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
-        "binPath": ["bin"]
-      }
+    "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+    "branch": "11",
+    "name": "clang",
+    "binPath": ["bin"]
+  },
+  {
+    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
+    "name": "gcc",
+    "binPath": ["bin"]
+  }
     ],
     "ccache": true,
     "params": {
@@ -37,7 +42,7 @@
 	}
     },
     "AnyKernel3": {
-      "use": true,
+      "use": false,
       "release": true,
       "repo": "https://github.com/easterNday/AnyKernel3/",
       "branch": "sm8350"
