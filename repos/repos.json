@@ -1,23 +1,23 @@
 [  
   {
     "kernelSource": {
-      "name": "GT 5.4",
-      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
-      "branch": "master",
-      "device": "RMX2202",
-      "defconfig": "RMX2202_defconfig"
+      "name": "DogDay-KernelSU-Proton-release",
+      "repo": "https://codeberg.org/DogDayAndroid/android_kernel_xiaomi_thyme",
+      "branch": "lineage-20.0",
+      "device": "thyme",
+      "defconfig": "thyme_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
-{
+      {
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "name": "proton-clang",
-        "binPath": ["./bin"]
-      },
+        "binPath": ["bin"]
+      }
     ],
-    "ccache": true,
-"params": {
+    "ccache": false,
+    "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
@@ -36,10 +36,11 @@
         "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
-     "AnyKernel3": {
-      "use": false,
+    "AnyKernel3": {
+      "use": true,
       "release": true,
       "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "sm8350"
+      "branch": "thyme"
     }
+  }
 ]
