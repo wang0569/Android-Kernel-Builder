@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "GT 5.4",
       "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
-      "branch": "8a0aae5a2749",
+      "branch": "master",
       "device": "RMX2202",
       "defconfig": "RMX2202_defconfig"
     },
