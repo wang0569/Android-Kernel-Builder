@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "GT_5.4",
-      "repo": "https://github.com/aosparsche/android_kernel_realme_sm8350",
-      "branch": "rebase",
+      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source.git",
+      "branch": "master",
       "device": "RMX2202CN",
       "defconfig": "RMX2202CN_defconfig"
     },
