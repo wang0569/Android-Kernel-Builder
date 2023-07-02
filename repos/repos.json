@@ -1,11 +1,11 @@
 [  
   {
     "kernelSource": {
-      "name": "GT-5.4-android",
-      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
-      "branch": "master",
-      "device": "GT",
-      "defconfig": "GT_defconfig"
+      "name": "GT",
+      "repo": "https://github.com/aosparsche/android_kernel_realme_sm8350",
+      "branch": "rebase",
+      "device": "RXM2202",
+      "defconfig": "RMX2202_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -21,6 +21,7 @@
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
         "LD": "proton-clang/bin/ld.lld",
@@ -37,10 +38,10 @@
       }
     },
     "AnyKernel3": {
-      "use": true,
-      "release": true,
+      "use": false,
+      "release": false,
       "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "thyme"
+      "branch": "master"
     }
   }
 ]
