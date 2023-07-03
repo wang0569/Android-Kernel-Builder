@@ -1,11 +1,11 @@
 [  
   {
     "kernelSource": {
-      "name": "Chopin_KernelSU_Proton",
-      "repo": "https://github.com/AOSP-13-Mediatek/kernel_xiaomi_chopin",
-      "branch": "r",
-      "device": "chopin",
-      "defconfig": "chopin_user_defconfig"
+      "name": "GT-5.4-android12",
+      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
+      "branch": "master",
+      "device": "GT",
+      "defconfig": "GT_user_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
