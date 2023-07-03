@@ -1,14 +1,14 @@
 [  
   {
     "kernelSource": {
-      "name": "GT_5.4",
-      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
+      "name": "GT-5.4",
+      "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source.git",
       "branch": "master",
-      "device": "RMX2202CN",
-      "defconfig": "RMX2202CN_defconfig"
+      "device": "GT",
+      "defconfig": "GT_defconfig"
     },
     "withKernelSU": true,
-     "toolchains": [
+    "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
@@ -16,13 +16,12 @@
         "binPath": ["bin"]
       }
     ],
-    "ccache": false,
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
-    "CLANG_TRIPLE": "aarch64-linux-gnu-",
-    "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
         "LD": "proton-clang/bin/ld.lld",
         "AR": "proton-clang/bin/llvm-ar",
@@ -41,7 +40,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "master"
+      "branch": "thyme"
     }
   }
 ]
