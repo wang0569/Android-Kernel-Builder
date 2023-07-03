@@ -8,7 +8,8 @@
       "defconfig": "RMX2202CN_defconfig"
     },
     "withKernelSU": false,
-    "{
+    "toolchains": [,
+  {
     "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
     "branch": "11",
     "name": "clang",
@@ -19,7 +20,7 @@
     "name": "gcc",
     "binPath": ["bin"]
   }
-    ],
+],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
