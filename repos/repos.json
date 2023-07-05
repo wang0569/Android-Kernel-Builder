@@ -2,32 +2,39 @@
   {
     "kernelSource": {
       "name": "GT-5.4-android12",
-      "repo": "https://github.com/wang0569/realme_GT-Android12-kernel-source",
+      "repo": "https://github.com/wang0569/realme_GT-Android12-kernel-source.git",
       "branch": "master",
-      "device": "gt",
-      "defconfig": "arch/arm64/configs/vendor/genericarmv8-64_defconfig"
+      "device": "GT",
+      "defconfig": "GT_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
-     {
-    "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2022/clang-r450784d.tar.gz",
-    "name": "clang",
+      {
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "name": "proton-clang",
     "binPath": ["./bin"]
-  },
-  {
-    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
-    "name": "gcc",
-    "binPath": ["bin"]
   }
     ],
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
          "CLANG_TRIPLE": "aarch64-linux-gnu-",
-    "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-    "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
@@ -35,6 +42,6 @@
       "release": false,
       "repo": "https://github.com/easterNday/AnyKernel3/",
       "branch": "thyme"
-    }
+    },
   }
 ]
