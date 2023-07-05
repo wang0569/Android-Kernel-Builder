@@ -4,8 +4,8 @@
       "name": "GT-5.4-android12",
       "repo": "https://github.com/wang0569/realme_GT-Android12-kernel-source",
       "branch": "master",
-      "device": "lahaina-qgki",
-      "defconfig": "lahaina-qgki_defconfig"
+      "device": "gt",
+      "defconfig": "arch/arm64/configs/vendor/genericarmv8-64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
