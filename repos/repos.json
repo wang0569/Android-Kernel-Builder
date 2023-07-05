@@ -4,22 +4,27 @@
       "name": "GT-5.4-android12",
       "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
       "branch": "master",
-      "device": "RMX2202",
-      "defconfig": "_defconfig"
+      "device": "GT",
+      "defconfig": "defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
-      {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
-        "binPath": ["./bin"]
-      }
+       {
+    "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+    "branch": "11",
+    "name": "clang",
+    "binPath": ["bin"]
+  },
+  {
+    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
+    "name": "gcc",
+    "binPath": ["bin"]
+  }
     ],
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "clang",
       "externalCommand": {
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
