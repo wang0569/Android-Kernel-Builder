@@ -4,8 +4,8 @@
       "name": "GT-5.4-android12",
       "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
       "branch": "master",
-      "device": "genericarmv8-64",
-      "defconfig": "genericarmv8-64_defconfig"
+      "device": "RMX2202",
+      "defconfig": "_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
