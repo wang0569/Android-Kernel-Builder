@@ -4,8 +4,8 @@
       "name": "GT-5.4-android12",
       "repo": "https://github.com/realme-kernel-opensource/realme_GT_GT2-AndroidS-kernel-source",
       "branch": "master",
-      "device": "GT",
-      "defconfig": "defconfig"
+      "device": "rockpi4",
+      "defconfig": "rockpi4_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -21,7 +21,7 @@
     "binPath": ["bin"]
   }
     ],
-    "ccache": false,
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "clang",
