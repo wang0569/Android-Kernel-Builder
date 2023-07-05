@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "GT-5.4-android12",
-      "repo": "https://github.com/wang0569/realme_GT-Android12-kernel-source.git",
+      "repo": "https://github.com/wang0569/realme_GT-Android12-kernel-source",
       "branch": "master",
       "device": "GT",
       "defconfig": "GT_defconfig"
